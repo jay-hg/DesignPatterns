@@ -1,5 +1,7 @@
 package com.hgc.cor;
 
+import com.hgc.cor.common.Msg;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -28,17 +30,6 @@ public class Main {
     }
 }
 
-class Msg {
-    private String msg;
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
-}
 interface Filter {
     public boolean doFilter(Msg msg);
 }
